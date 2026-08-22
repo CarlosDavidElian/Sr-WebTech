@@ -2,6 +2,8 @@
   "version": 2,
   "rewrites": [
     { "source": "/", "destination": "/web/index.html" },
-    { "source": "/:path*", "destination": "/web/:path*" }
+    { "source": "/styles.css", "destination": "/web/styles.css" },
+    { "source": "/script.js", "destination": "/web/script.js" },
+    { "source": "/assets/:path*", "destination": "/web/assets/:path*" }
   ]
 }
