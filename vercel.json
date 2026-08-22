@@ -4,6 +4,7 @@
     { "source": "/", "destination": "/web/index.html" },
     { "source": "/styles.css", "destination": "/web/styles.css" },
     { "source": "/script.js", "destination": "/web/script.js" },
-    { "source": "/assets/:path*", "destination": "/web/assets/:path*" }
+    { "source": "/assets/:path*", "destination": "/web/assets/:path*" },
+    { "source": "/:path*", "destination": "/web/index.html" }
   ]
 }
