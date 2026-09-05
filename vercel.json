@@ -1,11 +1,10 @@
 {
   "version": 2,
-  "redirects": [
-    { "source": "/", "destination": "/web/", "permanent": false }
-  ],
-  "rewrites": [
-    { "source": "/styles.css", "destination": "/web/styles.css" },
-    { "source": "/script.js", "destination": "/web/script.js" },
-    { "source": "/assets/:path*", "destination": "/web/assets/:path*" }
+  "routes": [
+    { "src": "^/$", "dest": "/web/index.html" },
+    { "src": "^/styles\\.css$", "dest": "/web/styles.css" },
+    { "src": "^/script\\.js$", "dest": "/web/script.js" },
+    { "src": "^/assets/(.*)$", "dest": "/web/assets/$1" },
+    { "handle": "filesystem" }
   ]
 }
