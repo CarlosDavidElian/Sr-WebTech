@@ -1,7 +1,5 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
-const contactForm = document.querySelector('.contact-form');
-const formStatus = document.querySelector('.form-status');
 
 if (menuToggle && navLinks) {
   menuToggle.addEventListener('click', () => {
@@ -17,10 +15,3 @@ if (menuToggle && navLinks) {
   });
 }
 
-if (contactForm && formStatus) {
-  contactForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    formStatus.textContent = 'Mensaje recibido. Nos pondremos en contacto contigo pronto.';
-    contactForm.reset();
-  });
-}
